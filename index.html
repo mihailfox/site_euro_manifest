@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>#EuRoManifest</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="shadow">
+      <div
+        class="h-1 bg-gradient-to-r from-blue-700 via-yellow-400 to-red-600"
+      ></div>
+
+      <div class="px-4 py-2 flex items-center justify-between">
+        <a href="#" class="text-xl font-bold text-blue-800"> #EuRoManifest </a>
+
+        <nav class="hidden md:block nav-menu">
+          <ul class="flex space-x-4">
+            <li>
+              <a href="#despre" class="text-gray-600 hover:text-red-600">
+                Despre
+              </a>
+            </li>
+            <li>
+              <a href="#participi" class="text-gray-600 hover:text-red-600">
+                De ce să participi?
+              </a>
+            </li>
+            <li>
+              <a href="#locatie" class="text-gray-600 hover:text-red-600">
+                Locație
+              </a>
+            </li>
+            <li>
+              <a href="#faq" class="text-gray-600 hover:text-red-600"> FAQ </a>
+            </li>
+          </ul>
+        </nav>
+        <a
+          href="#inscriere"
+          class="bg-yellow-400 text-blue-900 py-2 px-4 ml-4 rounded font-semibold hover:bg-red-600 hover:text-white"
+        >
+          Înscrie-te
+        </a>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section
+      class="relative bg-cover bg-center min-h-[80vh] flex items-center justify-center"
+      style="background-image: url('./assets/images/hero-bg.jpg')"
+    >
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/40"></div>
+      <div
+        class="relative z-10 text-center text-white p-4 max-w-[600px] mx-auto"
+      >
+        <h1 class="text-3xl md:text-5xl font-bold mb-4">
+          Hai alături de noi la #EuRoManifest!
+        </h1>
+        <p class="text-base md:text-lg mb-6">
+          17 Martie, Piața Victoriei, ora 17:00
+        </p>
+
+        <a
+          href="#inscriere"
+          class="bg-yellow-400 text-blue-900 py-2 px-4 rounded font-semibold hover:bg-red-600 hover:text-white inline-block"
+        >
+          Participă!
+        </a>
+      </div>
+    </section>
+
+    <div
+      class="mx-auto w-[80%] h-1 bg-gradient-to-r from-blue-700 via-yellow-400 to-red-600 my-8"
+    ></div>
+
+    <!-- ABOUT SECTION -->
+    <section id="despre" class="py-12 px-4">
+      <!-- Container centralizat -->
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-4 md:gap-8"
+      >
+        <!-- Coloană Text -->
+        <div class="md:w-1/2 md:pl-8">
+          <div class="bg-blue-50 p-6 rounded shadow space-y-4">
+            <h2 class="text-3xl font-bold mb-6">De ce #EuRoManifest?</h2>
+
+            <blockquote
+              class="border-l-4 border-red-500 pl-4 italic text-gray-600 mb-6"
+            >
+              „Acesta nu este un protest, ci o manifestare pașnică de
+              solidaritate pentru valorile europene.”
+            </blockquote>
+
+            <h3 class="text-xl font-semibold mb-2">Context</h3>
+            <p class="mb-4">
+              Într-un context politic tot mai tensionat, vedem cum un val
+              <span class="text-red-600">suveranist și ultranaționalist</span>
+              își face loc în discursul public...
+            </p>
+
+            <h3 class="text-xl font-semibold mb-2">Apel la solidaritate</h3>
+            <p class="mb-4">
+              Este momentul să ne facem auziți și să arătăm că
+              <span class="text-blue-700 font-semibold">România</span>
+              este și va rămâne parte a
+              <span class="text-yellow-600 font-semibold"
+                >familiei europene</span
+              >.
+            </p>
+
+            <ul class="list-disc list-inside mb-4 space-y-2">
+              <li>Valorile democrației și libertății</li>
+              <li>Apartenența la Uniunea Europeană</li>
+              <li>Refuzul discursului extremist</li>
+            </ul>
+
+            <p>
+              <strong class="text-red-600">Vino și tu!</strong> Să arătăm
+              împreună că susținem democrația, libertatea și viitorul nostru
+              european!
+            </p>
+          </div>
+        </div>
+
+        <!-- Coloană Imagine -->
+        <div class="md:w-1/2 mb-6 md:mb-0">
+          <img
+            src="./assets/images/despre-hero.jpg"
+            alt="Imagine reprezentativă"
+            class="w-full rounded shadow"
+          />
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="mx-auto w-[80%] h-1 bg-gradient-to-r from-blue-700 via-yellow-400 to-red-600 my-8"
+    ></div>
+
+    <!-- DE CE SA PARTICIPI SECTION -->
+    <section id="participi" class="py-12 px-4 bg-white">
+      <div class="max-w-7xl mx-auto text-center mb-8">
+        <h2 class="text-3xl md:text-4xl font-bold mb-2">De ce să participi?</h2>
+        <p class="text-gray-600 md:text-lg">
+          Iată câteva motive pentru care #EuRoManifest contează.
+        </p>
+      </div>
+
+      <!-- Grid de carduri -->
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div
+          class="bg-gray-50 p-6 rounded shadow space-y-4 flex flex-col items-center hover:scale-105 hover:shadow-lg transition-all duration-300"
+        >
+          <div class="w-12 h-12 text-blue-700">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.516 2.17a.75.75 0 0 0-1.032 0 11.209 11.209 0 0 1-7.877 3.08.75.75 0 0 0-.722.515A12.74 12.74 0 0 0 2.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 0 0 .374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 0 0-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08Zm3.094 8.016a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-blue-900">
+            Susții valorile europene
+          </h3>
+          <p class="text-gray-600 text-center">
+            Arată că îți pasă de democrație, libertate și de viitorul României
+            în Uniunea Europeană.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-gray-50 p-6 rounded shadow space-y-4 flex flex-col items-center hover:scale-105 hover:shadow-lg transition-all duration-300"
+        >
+          <div class="w-12 h-12 text-blue-700">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6"
+            >
+              <path
+                d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z"
+              />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-blue-900">
+            Îți exprimi solidaritatea
+          </h3>
+          <p class="text-gray-600 text-center">
+            E mai mult decât un protest – este un mesaj pașnic de unitate și
+            apartenență la valorile comune.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-gray-50 p-6 rounded shadow space-y-4 flex flex-col items-center hover:scale-105 hover:shadow-lg transition-all duration-300"
+        >
+          <div class="w-12 h-12 text-blue-700">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8.25 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM15.75 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM2.25 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM6.31 15.117A6.745 6.745 0 0 1 12 12a6.745 6.745 0 0 1 6.709 7.498.75.75 0 0 1-.372.568A12.696 12.696 0 0 1 12 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 0 1-.372-.568 6.787 6.787 0 0 1 1.019-4.38Z"
+                clip-rule="evenodd"
+              />
+              <path
+                d="M5.082 14.254a8.287 8.287 0 0 0-1.308 5.135 9.687 9.687 0 0 1-1.764-.44l-.115-.04a.563.563 0 0 1-.373-.487l-.01-.121a3.75 3.75 0 0 1 3.57-4.047ZM20.226 19.389a8.287 8.287 0 0 0-1.308-5.135 3.75 3.75 0 0 1 3.57 4.047l-.01.121a.563.563 0 0 1-.373.486l-.115.04c-.567.2-1.156.349-1.764.441Z"
+              />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-blue-900">
+            Cunoști oameni implicați
+          </h3>
+          <p class="text-gray-600 text-center">
+            Vei întâlni persoane cu aceleași principii, dornice să apere
+            democrația și parcursul european al României.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="mx-auto w-[80%] h-1 bg-gradient-to-r from-blue-700 via-yellow-400 to-red-600 my-8"
+    ></div>
+
+    <!-- LOCATIE SECTION -->
+    <section id="locatie" class="py-12 px-4 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <!-- Titlu secțiune -->
+        <div class="text-center mb-8">
+          <h2 class="text-3xl md:text-4xl font-bold mb-2">Unde ne întâlnim?</h2>
+          <p class="text-gray-600 md:text-lg">
+            Piața Victoriei, București, 17 Martie, ora 17:00
+          </p>
+        </div>
+        <!-- Grid cu text + hartă -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+          <!-- Coloană cu informații suplimentare -->
+          <div class="space-y-4">
+            <h3 class="text-xl font-semibold text-blue-900">
+              Instrucțiuni de acces
+            </h3>
+            <p class="text-gray-600">
+              Piața Victoriei este un nod central în București, deservit de
+              multiple mijloace de transport public.
+            </p>
+            <p class="text-gray-600">
+              <strong>Transport public:</strong>
+              <br />
+              - <strong>Metrou:</strong> Liniile M1 și M2 opresc la stația Piața
+              Victoriei. <br />
+              - <strong>Autobuz:</strong> Liniile 182, 205 și 381 au stații în
+              apropiere. <br />
+              - <strong>Troleibuz:</strong> Liniile 79 și 86 deservesc zona.
+            </p>
+            <p class="text-gray-600">
+              Stațiile de autobuz și troleibuz se află la aproximativ 1-2 minute
+              de mers pe jos de Piața Victoriei.
+            </p>
+            <p class="text-gray-600">
+              <strong>Cu mașina:</strong>
+              <br />
+              În zona Piața Victoriei există mai multe opțiuni de parcare:
+              <br />
+              -
+              <strong>Parcare Piața Victoriei (bretea Titulescu):</strong>
+              Situată pe Șoseaua Nicolae Titulescu, la aproximativ 200 de metri
+              de Piața Victoriei. <br />
+              - <strong>Parcare FAST PARKING:</strong> Localizată pe Strada
+              Buzești nr. 55-57, la 200 de metri de Piața Victoriei.
+            </p>
+            <p class="text-gray-600">
+              Deoarece locurile de parcare pot fi limitate, recomandăm
+              utilizarea transportului public pentru a ajunge în zonă.
+            </p>
+
+            <!-- Buton Obține Indicații -->
+            <a
+              href="https://www.google.com/maps/dir//Pia%C8%9Ba+Victoriei,+Pia%C8%9Ba+Victoriei,+Bucure%C8%99ti/@44.4525452,26.044546,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x40b201473f35231d:0xdae9d49131f11a98!2m2!1d26.0857453!2d44.4525526!3e0?entry=ttu&g_ep=EgoyMDI1MDIyNS4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              class="inline-block bg-yellow-400 text-blue-900 py-2 px-4 rounded font-semibold hover:bg-red-600 hover:text-white transition-colors"
+            >
+              Obține indicații
+            </a>
+          </div>
+
+          <!-- Coloană cu embed Google Maps -->
+          <div class="w-full h-72 md:h-96 rounded shadow overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11392.206547815582!2d26.075499922340065!3d44.452612385274385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b201ff8e4e556f%3A0x3195c439d37f1508!2sPia%C8%9Ba%20Victoriei%2C%20Bucure%C8%99ti!5e0!3m2!1sro!2sro!4v1740685243026!5m2!1sro!2sro"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="mx-auto w-[80%] h-1 bg-gradient-to-r from-blue-700 via-yellow-400 to-red-600 my-8"
+    ></div>
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="py-12 px-4 bg-white">
+      <div class="max-w-7xl mx-auto text-center mb-8">
+        <h2 class="text-3xl md:text-4xl font-bold mb-2">Întrebări frecvente</h2>
+        <p class="text-gray-600 md:text-lg">
+          Ai o nelămurire? Poate găsești răspunsul aici.
+        </p>
+      </div>
+
+      <div class="max-w-7xl mx-auto space-y-4">
+        <!-- FAQ Item 1 -->
+        <div class="faq-item bg-gray-50 p-4 rounded shadow">
+          <button
+            class="faq-question text-xl font-semibold text-blue-900 w-full text-left flex justify-between items-center"
+          >
+            <span>1. Acest eveniment se desfășoară în formă legală?</span>
+            <svg
+              class="w-6 h-6 text-gray-600 transform transition-transform"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 4v16m8-8H4" />
+            </svg>
+          </button>
+          <div class="faq-answer mt-2 text-gray-600 hidden">
+            <p>
+              Da, acest eveniment este organizat legal și are autorizație
+              oficială din partea Primăriei Generale a Munincipiului București.
+            </p>
+          </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto space-y-4">
+          <!-- FAQ Item 2 -->
+          <div class="faq-item bg-gray-50 p-4 rounded shadow">
+            <button
+              class="faq-question text-xl font-semibold text-blue-900 w-full text-left flex justify-between items-center"
+            >
+              <span>2. Este acesta un protest violent?</span>
+              <svg
+                class="w-6 h-6 text-gray-600 transform transition-transform"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 4v16m8-8H4" />
+              </svg>
+            </button>
+            <div class="faq-answer mt-2 text-gray-600 hidden">
+              <p>
+                Nu, #EuRoManifest este o manifestare pașnică, menită să susțină
+                valorile europene și libertățile democratice. Nu dorim violență,
+                ci solidaritate și dialog.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-item bg-gray-50 p-4 rounded shadow">
+            <button
+              class="faq-question text-xl font-semibold text-blue-900 w-full text-left flex justify-between items-center"
+            >
+              <span>3. Trebuie să mă înscriu pentru a participa?</span>
+              <svg
+                class="w-6 h-6 text-gray-600 transform transition-transform"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 4v16m8-8H4" />
+              </svg>
+            </button>
+            <div class="faq-answer mt-2 text-gray-600 hidden">
+              <p>
+                Participarea este liberă și deschisă tuturor. Totuși, dacă
+                dorești să fii la curent cu ultimele știri, te poți alătura
+                grupului nostru de Telegram.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-item bg-gray-50 p-4 rounded shadow">
+            <button
+              class="faq-question text-xl font-semibold text-blue-900 w-full text-left flex justify-between items-center"
+            >
+              <span>4. Pot veni cu familia și prietenii?</span>
+              <svg
+                class="w-6 h-6 text-gray-600 transform transition-transform"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 4v16m8-8H4" />
+              </svg>
+            </button>
+            <div class="faq-answer mt-2 text-gray-600 hidden">
+              <p>
+                Desigur! Evenimentul este pentru toți cei care doresc să susțină
+                valorile democrației și apartenența la Uniunea Europeană.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="faq-item bg-gray-50 p-4 rounded shadow">
+            <button
+              class="faq-question text-xl font-semibold text-blue-900 w-full text-left flex justify-between items-center"
+            >
+              <span>5. Care sunt regulile de conduită?</span>
+              <svg
+                class="w-6 h-6 text-gray-600 transform transition-transform"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 4v16m8-8H4" />
+              </svg>
+            </button>
+            <div class="faq-answer mt-2 text-gray-600 hidden">
+              <p>
+                Pentru ca evenimentul să se desfășoare în siguranță și respect,
+                te rugăm să:
+              </p>
+              <p class="indent-8">✔ Respecți indicațiile organizatorilor</p>
+              <p class="indent-8">✔ Eviți comportamentele agresive sau incitatoare</p>
+              <p class="indent-8">✔ Nu aduci obiecte periculoase</p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 6 -->
+          <div class="faq-item bg-gray-50 p-4 rounded shadow">
+            <button
+              class="faq-question text-xl font-semibold text-blue-900 w-full text-left flex justify-between items-center"
+            >
+              <span>6. Ce ar trebui să aducem cu noi?</span>
+              <svg
+                class="w-6 h-6 text-gray-600 transform transition-transform"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 4v16m8-8H4" />
+              </svg>
+            </button>
+            <div class="faq-answer mt-2 text-gray-600 hidden">
+              <p>Recomandăm să aduci:</p>
+              <p class="indent-8">✔ Steaguri ale României și Uniunii Europene 🇷🇴🇪🇺</p>
+              <p class="indent-8">✔ Apă și gustări 🥤🍏</p>
+              <p class="indent-8">✔ Haine confortabile în funcție de vreme ☀️🌧</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-blue-900 text-white py-6 mt-12">
+        <!-- Banda tricoloră foarte subțire, opțional -->
+        <!--
+        <div class="h-1 bg-gradient-to-r from-blue-700 via-yellow-400 to-red-600"></div>
+        -->
+        
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+          
+          <!-- Partea stângă: Logo / Nume + Copy -->
+          <div class="mb-4 md:mb-0">
+            <!-- Poți folosi text simplu sau un mini-logo -->
+            <a href="#" class="text-xl font-bold hover:text-yellow-400 transition-colors">
+              #EuRoManifest
+            </a>
+            <p class="text-gray-300 text-sm">
+              © 2025 Toate drepturile rezervate
+            </p>
+          </div>
+          
+          <!-- Partea dreaptă: Link-uri rapide -->
+          <div class="space-x-4">
+            <a href="#despre" class="text-gray-200 hover:text-yellow-400 transition-colors">Despre</a>
+            <a href="#participi" class="text-gray-200 hover:text-yellow-400 transition-colors">De ce să participi?</a>
+            <a href="#locatie" class="text-gray-200 hover:text-yellow-400 transition-colors">Locație</a>
+            <a href="#faq" class="text-gray-200 hover:text-yellow-400 transition-colors">FAQ</a>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>
