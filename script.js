@@ -20,15 +20,7 @@ document.querySelectorAll('.faq-question').forEach(button => {
     });
   });
 
-  document.querySelectorAll(".footer-links a").forEach((link) => {
-    link.addEventListener("click", function (event) {
-      event.preventDefault();
-      const sectionId = this.getAttribute("href").replace("#", "");
-      scrollToSection(sectionId);
-    });
-  });
-
-  document.querySelectorAll(".footer-links a").forEach((link) => {
+  document.querySelectorAll(".footer-links .redir").forEach((link) => {
     link.addEventListener("click", function (event) {
       event.preventDefault();
       const sectionId = this.getAttribute("href").replace("#", "");
@@ -39,7 +31,7 @@ document.querySelectorAll('.faq-question').forEach(button => {
   document.querySelectorAll(".euro-logo").forEach((link) => {
     link.addEventListener("click", function (event) {
       event.preventDefault();
-      scrollToSection('header-logo');
+      window.scrollTo({top: 0, behavior: 'smooth'});
     });
   });
 
