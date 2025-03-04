@@ -9,13 +9,20 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="shadow">
+    <header class="sticky top-0 z-50 bg-white/90 shadow">
       <div
         class="h-1 bg-gradient-to-r from-blue-700 via-yellow-400 to-red-600"
       ></div>
 
       <div class="px-4 py-2 flex items-center justify-between">
-        <a class="euro-logo" id="header-logo" href="#" class="text-xl font-bold text-blue-800"> #EuRoManifest </a>
+        <a
+          class="euro-logo"
+          id="header-logo"
+          href="#"
+          class="text-xl font-bold text-blue-800"
+        >
+          #EuRoManifest
+        </a>
 
         <nav class="hidden md:block nav-menu">
           <ul class="flex space-x-4">
@@ -37,11 +44,21 @@
             <li>
               <a href="#faq" class="text-gray-600 hover:text-red-600"> FAQ </a>
             </li>
+            <li>
+              <a href="#parteneri" class="text-gray-600 hover:text-red-600">
+                Parteneri
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="text-gray-600 hover:text-red-600">
+                Contact
+              </a>
+            </li>
           </ul>
         </nav>
         <a
           target="_blank"
-          href="https://t.me/romaniaeuropeana"
+          href="https://www.facebook.com/events/560254097022554"
           class="bg-yellow-400 text-blue-900 py-2 px-4 ml-4 rounded font-semibold hover:bg-red-600 hover:text-white"
         >
           Participă!
@@ -68,7 +85,7 @@
 
         <a
           target="_blank"
-          href="https://t.me/romaniaeuropeana"
+          href="https://www.facebook.com/events/560254097022554"
           class="bg-yellow-400 text-blue-900 py-2 px-4 rounded font-semibold hover:bg-red-600 hover:text-white inline-block"
         >
           Vreau să mă alătur!
@@ -505,42 +522,172 @@
       </div>
     </section>
 
+    <div
+      class="mx-auto w-[80%] h-1 bg-gradient-to-r from-blue-700 via-yellow-400 to-red-600 my-8"
+    ></div>
+
+    <!-- PARTENERI SECTION -->
+    <section id="parteneri" class="py-12 px-4 bg-gray-50">
+      <div class="max-w-7xl mx-auto text-center mb-8">
+        <h2 class="text-3xl md:text-4xl font-bold mb-2">Parteneri</h2>
+        <p class="text-gray-600 md:text-lg">
+          Susținătorii și colaboratorii evenimentului nostru.
+        </p>
+      </div>
+
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-8"
+      >
+        <!-- Card Partner 1 -->
+        <div class="flex flex-col items-center">
+          <a
+            href="https://partner1.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./assets/images/partener-declic.jpg"
+              alt="Logo Partner 1"
+              class="w-32 h-32 rounded-full object-cover shadow-md mb-4 hover:scale-125 transition-transform duration-300"
+            />
+          </a>
+          <p class="text-xl font-semibold text-blue-900">Declic</p>
+        </div>
+        <!-- Card Partner 2 -->
+        <div class="flex flex-col items-center">
+          <a
+            href="https://partner2.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./assets/images/partener-rezistenta.jpg"
+              alt="Logo Partner 2"
+              class="w-32 h-32 rounded-full object-cover shadow-md mb-4 hover:scale-125 transition-transform duration-300"
+            />
+          </a>
+          <p class="text-xl font-semibold text-blue-900">Rezistența</p>
+        </div>
+        <!-- Card Partner 3 -->
+        <div class="flex flex-col items-center">
+          <a
+            href="https://partner3.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./assets/images/partener-coruptia-ucide.jpg"
+              alt="Logo Partner 3"
+              class="w-32 h-32 rounded-full object-cover shadow-md mb-4 hover:scale-125 transition-transform duration-300"
+            />
+          </a>
+          <p class="text-xl font-semibold text-blue-900">Corupția ucide</p>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="mx-auto w-[80%] h-1 bg-gradient-to-r from-blue-700 via-yellow-400 to-red-600 my-8"
+    ></div>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-12 px-4 bg-white">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Contact</h2>
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8"
+        >
+          <!-- Facebook -->
+          <a
+            href="https://www.facebook.com/EuRoManifest"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center space-x-2 hover:text-blue-600 transition-colors"
+          >
+            <img
+              src="./assets/images/facebook_icon.svg"
+              alt="Facebook"
+              class="w-8 h-8"
+            />
+            <span class="text-xl font-medium">Facebook</span>
+          </a>
+          <!-- Eveniment -->
+          <a
+            href="https://www.facebook.com/events/560254097022554"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center space-x-2 hover:text-blue-600 transition-colors"
+          >
+            <img
+              src="./assets/images/facebook_icon.svg"
+              alt="Eveniment"
+              class="w-8 h-8"
+            />
+            <span class="text-xl font-medium">Eveniment</span>
+          </a>
+          <!-- Telegram -->
+          <a
+            href="https://t.me/romaniaeuropeana"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center space-x-2 hover:text-blue-600 transition-colors"
+          >
+            <img
+              src="./assets/images/telegram_logo.svg"
+              alt="Telegram"
+              class="w-8 h-8"
+            />
+            <span class="text-xl font-medium">Telegram</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- FOOTER -->
     <footer class="bg-blue-900 text-white py-6 mt-12">
-        <div class="h-1 bg-gradient-to-r from-blue-700 via-yellow-400 to-red-600"></div>
+      <div
+        class="h-1 bg-gradient-to-r from-blue-700 via-yellow-400 to-red-600"
+      ></div>
       <div
         class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between"
       >
         <div class="mb-4 md:mb-0">
-          <a class="euro-logo"
+          <a
             href="#"
-            class="text-xl font-bold hover:text-yellow-400 transition-colors"
+            class="euro-logo text-xl font-bold hover:text-yellow-400 transition-colors"
           >
             #EuRoManifest
           </a>
-          <p class="text-gray-300 text-sm">Author: Mihai Frățilă © 2025 Toate drepturile rezervate</p>
+          <p class="text-gray-300 text-sm">
+            Author: Mihai Frățilă © 2025 Toate drepturile rezervate
+          </p>
         </div>
 
         <div class="space-x-4 footer-links">
-          <a
+          <a class="redir"
             href="#despre"
             class="text-gray-200 hover:text-yellow-400 transition-colors"
             >Despre</a
           >
-          <a
+          <a class="redir"
             href="#participi"
             class="text-gray-200 hover:text-yellow-400 transition-colors"
             >De ce să participi?</a
           >
-          <a
+          <a class="redir"
             href="#locatie"
             class="text-gray-200 hover:text-yellow-400 transition-colors"
             >Locație</a
           >
-          <a
+          <a class="redir"
             href="#faq"
             class="text-gray-200 hover:text-yellow-400 transition-colors"
             >FAQ</a
+          >
+          <a
+            href="termeni-conditii.html"
+            class="text-gray-200 hover:text-yellow-400 transition-colors"
+            >Termeni și Condiții</a
           >
         </div>
       </div>
