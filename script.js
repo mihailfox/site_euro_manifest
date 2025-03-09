@@ -40,3 +40,14 @@ document.querySelectorAll('.faq-question').forEach(button => {
       .getElementById(sectionId)
       .scrollIntoView({ behavior: "smooth", block: "center" });
   }
+
+  function copyIBAN() {
+    const iban = document.getElementById('iban-text').innerText;
+    navigator.clipboard.writeText(iban)
+      .then(() => {
+        alert("IBAN copiat în clipboard!");
+      })
+      .catch(err => {
+        console.error("Eroare la copierea IBAN-ului: ", err);
+      });
+  }

@@ -42,12 +42,12 @@
               </a>
             </li>
             <li>
-              <a href="#faq" class="text-gray-600 hover:text-red-600"> FAQ </a>
-            </li>
-            <li>
               <a href="#parteneri" class="text-gray-600 hover:text-red-600">
                 Parteneri
               </a>
+            </li>
+            <li>
+              <a href="#donatii" class="text-gray-600 hover:text-red-600"> Donează </a>
             </li>
             <li>
               <a href="#contact" class="text-gray-600 hover:text-red-600">
@@ -90,6 +90,12 @@
         >
           Vreau să mă alătur!
         </a>
+        <a
+        onclick="scrollToSection('donatii')"
+        class="bg-yellow-400 text-blue-900 py-2 px-4 rounded font-semibold hover:bg-red-600 hover:text-white inline-block"
+      >
+        Donează cauzei!
+      </a>
       </div>
     </section>
 
@@ -427,7 +433,7 @@
               <p>
                 Participarea este liberă și deschisă tuturor. Totuși, dacă
                 dorești să fii la curent cu ultimele știri, te poți alătura
-                grupurilor nostre de Telegram și/sau Telegram.
+                grupurilor nostre de Facebook și/sau Telegram.
               </p>
             </div>
           </div>
@@ -519,6 +525,78 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <div
+      class="mx-auto w-[80%] h-1 bg-gradient-to-r from-blue-700 via-yellow-400 to-red-600 my-8"
+    ></div>
+
+    <section id="donatii" class="py-12 px-4 bg-gray-50">
+      <div class="max-w-7xl mx-auto text-center mb-8">
+        <h2 class="text-3xl md:text-4xl font-bold mb-2">Donații</h2>
+        <p class="text-gray-600 md:text-lg">
+          Mulțumim pentru sprijinul acordat! Fiecare contribuție este de
+          neprețuit.
+        </p>
+      </div>
+      <div class="max-w-3xl mx-auto bg-white p-8 rounded shadow-lg space-y-6">
+        <div class="space-y-4">
+          <p class="text-lg">
+            În urma consultărilor din cadrul echipei de organizare, s-a stabilit
+            că pentru buna desfășurare a evenimentului
+            <strong>#EuRoManifest</strong> este necesar un buget de aproximativ
+            <strong>3500 de euro</strong>.
+          </p>
+          <p class="text-lg">
+            Această sumă va fi utilizată pentru achiziționarea de materiale
+            esențiale – steaguri, bannere și alte elemente promoționale – precum
+            și pentru închirierea unei scene, a unui sistem de sonorizare, a
+            unui generator și a altor echipamente necesare.
+          </p>
+          <p class="text-lg">
+            Suntem recunoscători și apreciem orice fel de ajutor financiar pe
+            care îl puteți oferi. Fiecare contribuție, indiferent de mărime, ne
+            ajută să facem din <strong>#EuRoManifest</strong> un eveniment de
+            referință pentru valorile europene.
+          </p>
+        </div>
+        <div
+          class="w-full h-1 bg-gradient-to-r from-blue-700 via-yellow-400 to-red-600 my-4"
+        ></div>
+
+        <div class="space-y-4 text-lg">
+          <p><strong>Monedă:</strong> Leu românesc</p>
+          <p>
+            <strong>Beneficiari:</strong> Victor-Alexandru Toth &amp;
+            Giorgiana-Mirela Bolintiru
+          </p>
+          <p>
+            <strong>IBAN:</strong>
+            <span id="iban-text">LT80 3250 0004 3458 2491</span>
+          </p>
+          <p><strong>Cod BIC/SWIFT:</strong> REVOLT21</p>
+          <p>
+            <strong>Numele și adresa băncii:</strong><br />
+            Revolut Bank UAB<br />
+            Konstitucijos ave. 21B, 08130, Vilnius, Lithuania
+          </p>
+          <p><strong>BIC bancă corespondentă:</strong> BARCGB22</p>
+        </div>
+
+        <div class="text-center">
+          <button
+            onclick="copyIBAN()"
+            class="inline-block bg-blue-600 text-white py-2 px-6 rounded hover:bg-blue-700 transition-colors"
+          >
+            Copiază IBAN-ul
+          </button>
+        </div>
+
+        <p class="text-sm text-gray-500 text-center">
+          Garantăm transparența cheltuielilor conform legii și Regulamentului de
+          Protecție a Datelor Personale.
+        </p>
       </div>
     </section>
 
@@ -664,22 +742,26 @@
         </div>
 
         <div class="space-x-4 footer-links">
-          <a class="redir"
+          <a
+            class="redir"
             href="#despre"
             class="text-gray-200 hover:text-yellow-400 transition-colors"
             >Despre</a
           >
-          <a class="redir"
+          <a
+            class="redir"
             href="#participi"
             class="text-gray-200 hover:text-yellow-400 transition-colors"
             >De ce să participi?</a
           >
-          <a class="redir"
+          <a
+            class="redir"
             href="#locatie"
             class="text-gray-200 hover:text-yellow-400 transition-colors"
             >Locație</a
           >
-          <a class="redir"
+          <a
+            class="redir"
             href="#faq"
             class="text-gray-200 hover:text-yellow-400 transition-colors"
             >FAQ</a
